@@ -15,11 +15,11 @@ function init() {
 
 function createQuests() {
     var quests = [
-        { id: 1, opts: ['I LOVE ROME', 'I LOVE PARIS'], correctOptIndex: 0 },
-        { id: 2, opts: ['MUST GO TO DUBLIN', 'MUST GO TO LONDON'], correctOptIndex: 0 },
-        { id: 3, opts: ['I CAN USE A PIZZA NOW!', 'I CAN USE A CROISSANT NOW!'], correctOptIndex: 1 },
-        { id: 4, opts: ['LETS GET HIGH!', 'LETS GET LOW?'], correctOptIndex: 0 },
-        { id: 5, opts: ['APPLE IS THE BEST', 'SAMSUNG IS THE BEST'], correctOptIndex: 0 }
+        {  opts: ['I LOVE ROME', 'I LOVE PARIS'], correctOptIndex: 0 },
+        {  opts: ['MUST GO TO DUBLIN', 'MUST GO TO LONDON'], correctOptIndex: 0 },
+        {  opts: ['I CAN USE A PIZZA NOW!', 'I CAN USE A CROISSANT NOW!'], correctOptIndex: 1 },
+        {  opts: ['LETS GET HIGH!', 'LETS GET LOW?'], correctOptIndex: 0 },
+        {  opts: ['APPLE IS THE BEST', 'SAMSUNG IS THE BEST'], correctOptIndex: 0 }
     ]
     return quests
 }
@@ -27,7 +27,7 @@ function createQuests() {
 function renderQuest() {
     var strHtml = ''
     var elQuest = document.querySelector('.quest-box')
-    elQuest.style.backgroundImage = `url("../img/${gCurrQuestIdx}.jpg")`
+    elQuest.style.backgroundImage = `url("img/${gCurrQuestIdx}.jpg")`
     var questOpts = gQuests[gCurrQuestIdx].opts
     for (var i = 0; i < questOpts.length; i++) {
         var questOpt = questOpts[i]
