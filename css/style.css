@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    background-image: url('/img/pexels-pixabay-220201.jpg');
+    flex-direction: column;
+    align-items: center;
+    background-position-y: -180px;
+
+}
+
+h1 {
+    margin-top: 50px;
+    color: tan;
+    font-family: cursive;
+}
+
+.quest-box {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin-top: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: flex-end;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 60%;
+    transition: 1.5s;
+}
+
+button {
+    background-color: rgb(230, 230, 230);
+    border: 3px solid black;
+    border-radius: 10px;
+    color: hsla(271, 89%, 32%, 0.986);
+    cursor: pointer;
+
+}
+
+.quest-box button {
+    width: 100vw;
+    height: 40px;
+    opacity: 90%;
+    font-style: oblique;
+    font-size: medium;
+
+}
+
+.modal button {
+    height: 30px;
+    margin-top: 10px;
+    display: none;
+    opacity: 80%;
+    width: 80px;
+    align-self: center;
+
+}
+
+.modal {
+    margin-top: 15px;
+    display: none;
+    flex-direction: column;
+
+}
+
+.modal p {
+    font-size: 27px;
+    font-family: cursive;
+    color: rgba(197, 156, 44, 0.829);
+    margin: 0%;
+
+}
